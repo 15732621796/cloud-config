@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active:
+    - dev
+
+#---为同一个文件的不同配置环境
+---
+spring:
+  #开发环境
+  profiles: dev
+  application:
+    name: jarvis-config-dev
+
+---
+spring:
+  #测试环境
+  profiles: test
+  application:
+    name: jarvis-config-test
